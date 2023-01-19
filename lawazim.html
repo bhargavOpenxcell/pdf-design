@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@1,700&display=swap');
+        html, body{
+            height: 100%;
+        }
+        .w-100{
+            width: 100%;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: 'Manrope', sans-serif;
+            background-color: #3c3c3c;
+        }
+        .main-container{
+            /* remove it */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /* remove it */
+            padding: 17px;
+            background-color: #fff;
+            width: 250px;
+            height: auto;
+            max-height: 392px;
+        }
+        .logo{
+            width: 116px;
+            height: 12px;
+            margin-bottom: 14px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table tr td{
+            border: 1px solid #000;
+        }
+        table.date-table tr td{
+            border-left: 0;
+            border-right: 0;
+        }
+        table.border-0 tr td{
+            border: 0;
+        }
+        .from-table{
+            margin: 4px 0 10px 0;
+            border: 1px solid #000;
+            padding: 4px 8px;
+            font-size: 8px;
+            line-height: 14px;
+        }
+        .from-table table tr td{
+            vertical-align: top;
+            padding: 0;
+            font-weight: 600;
+        }
+        .from-to{
+            height: 24px;
+        }
+        .ship-table{
+            margin-bottom: 10px;
+            padding: 4px 8px;
+            border: 1px dashed #000;
+        }
+        .ship-table table tr:not(:nth-of-type(1)) td{
+            padding-top: 5px;
+        }
+        .order table:nth-of-type(1) tr:nth-of-type(1) td{
+            padding: 2px 4px;
+        }
+        .qr-code{
+            width: 60px;
+            text-align: center;
+        }
+        .barcode{
+            width: 113px;
+            height: 40px;
+        }
+        .barcode-text{
+            font-size: 8px;
+            line-height: 8px;
+            padding-bottom: 5px;
+        }
+        .barcode-parent{
+            padding: 5px 0 0 0 !important;
+        }
+        .powered{
+            margin-top: 6px;
+        }
+        .powered tr td{
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+            font-family: 'Lato';
+        }
+        .powered tr td img{
+            width: 43px;
+            height: 10px;
+            margin-left: 6px;
+            vertical-align: middle;
+            margin-bottom: 4px;
+        }
+        .ship-to td:first-of-type{
+            width: 55px;
+        }
+        .ship-to{
+            height: 50px;
+            vertical-align: text-top;
+        }
+        .br-0{
+            border-right: 0px;
+        }
+        .bl-0{
+            border-left: 0px;
+        }
+        .fs-12{
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .strong{
+            font-weight: 700 !important;
+        }
+        .text-left{
+            text-align: left;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="text-center">
+            <img src="images/Lawazim-logo.svg" alt="" class="logo">
+        </div>
+        <table class="date-table" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>Date: 16/01/2023</td>
+                <td class="strong text-right">1 OF 5</td>
+            </tr>
+        </table>
+        <div class="from-table">
+            <table class="border-0">
+                <tr class="from-to">
+                    <td rowspan="5" class="fs-12 strong">FROM:</td>
+                    <td class="text-right">شركة الجدیدة للإمدادات التجاریة العالمیة يت
+                        نسي </td>
+                </tr>
+                <tr><td class="text-right">Street Address </td></tr>
+                <tr><td class="text-right">Riyadh Province</td> </tr>
+                <tr><td class="text-right">Riyadh</td> </tr>
+                <tr><td class="text-right">Phone: 011 274 5121 / Mobile: 055 581 3573</td> </tr>
+            </table>
+        </div>
+        <div class="ship-table">
+            <table class="border-0">
+                <tr class="ship-to">
+                    <td class="strong">SHIP TO:</td>
+                    <td class="text-right fs-12 strong">شركة الجدیدة للإمدادات التجاریة العالمیة </td>
+                </tr>
+                <tr>
+                    <td>REGION:</td>
+                    <td class="text-right strong">Riyadh Province </td>
+                </tr>
+                <tr>
+                    <td>CITY:</td>
+                    <td class="text-right strong">Riyadh</td>
+                </tr>
+                <tr>
+                    <td>MOBILE:</td>
+                    <td class="text-right strong">055 5813 573</td> 
+                </tr>
+            </table>
+        </div>
+        <div class="order">
+            <table>
+                <tr>
+                    <td class="br-0 strong">ORDER ID</td>
+                    <td class="bl-0 text-right strong">HA100001</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="qr-code">
+                        <img src="images/QR_CODE.svg" alt="">
+                    </td>
+                    <td>
+                        <table class="border-0 text-center ">
+                            <tr><td class="barcode-parent"><img src="images/barcode.svg" alt="" class="barcode"></td></tr>
+                            <tr><td class="barcode-text">HA100001</td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table class="border-0 powered">
+                <tr class="text-center">
+                    <td><span>Powered By</span> <img src="images/hawak-logo-black.svg" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
